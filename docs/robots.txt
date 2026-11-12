@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://amakhaury.github.io/zenith/sitemap.xml
+Sitemap: https://zenithstone.ru/sitemap.xml
