@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="ru" class="no-js"{{metrikaAttr}}>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{seoTitle}}</title>
+<meta name="description" content="{{seoDescription}}">
+<link rel="canonical" href="{{siteUrl}}/">
+<meta name="theme-color" content="#101010">
+<meta name="format-detection" content="telephone=no">
+{{verification}}
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="{{brand}}">
+<meta property="og:title" content="{{seoTitle}}">
+<meta property="og:description" content="{{seoDescription}}">
+<meta property="og:url" content="{{siteUrl}}/">
+<meta property="og:image" content="{{siteUrl}}/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/inter-cyr.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{displayFontPreload}}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="/assets/img/hero-1200.avif" imagesrcset="/assets/img/hero-640.avif 640w, /assets/img/hero-1200.avif 1200w" imagesizes="(max-width: 767px) 100vw, 1200px" type="image/avif" fetchpriority="high">
+<script>document.documentElement.className=document.documentElement.className.replace('no-js','js')</script>
+{{styles}}
+<script type="application/ld+json">{{jsonld}}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="/" aria-label="{{brand}} — на главную">{{logoSvg}}</a>
+    <nav class="nav" aria-label="Основная навигация">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="#services">Услуги</a></li>
+        <li><a class="nav__link" href="#stages">Этапы</a></li>
+        <li><a class="nav__link" href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <a class="header__phone" href="tel:{{phoneHref}}">{{phoneDisplay}}</a>
+    <button class="burger icon-btn" type="button" aria-label="Открыть меню" aria-controls="menu" aria-expanded="false" data-menu-open>
+      <svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Меню" hidden>
+  <div class="menu__top">
+    <a class="logo" href="/" aria-label="{{brand}} — на главную">{{logoSvg}}</a>
+    <button class="icon-btn" type="button" aria-label="Закрыть меню" data-menu-close>
+      <svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></svg>
+    </button>
+  </div>
+  <ul class="menu__list">
+    <li><a class="menu__link" href="#directions">Камень</a></li>
+    <li><a class="menu__link" href="#services">Услуги</a></li>
+    <li><a class="menu__link" href="#stages">Этапы</a></li>
+    <li><a class="menu__link" href="#contacts">Контакты</a></li>
+  </ul>
+  <div class="menu__bottom">
+    <a class="menu__phone" href="tel:{{phoneHref}}">{{phoneDisplay}}</a>
+    {{socials}}
+  </div>
+</div>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero__grid">
+      <h1 class="h1 hero__title" id="hero-title">Изготовление изделий из камня</h1>
+      <p class="hero__sub">более 80 видов камня</p>
+      <a class="cta" href="#contacts" data-goal="cta_hero">
+        <svg viewBox="0 0 236 152" aria-hidden="true" focusable="false"><ellipse cx="119.516" cy="72.7595" rx="119.516" ry="72.7595" transform="matrix(0.975278 -0.220983 0.224424 0.974492 -15.1762 31.1908)"/></svg>
+        Заказать
+      </a>
+      <div class="hero__media">
+        <picture>
+          <source type="image/avif" srcset="/assets/img/hero-640.avif 640w, /assets/img/hero-1200.avif 1200w" sizes="(max-width: 767px) 100vw, 1200px">
+          <source type="image/webp" srcset="/assets/img/hero-640.webp 640w, /assets/img/hero-1200.webp 1200w" sizes="(max-width: 767px) 100vw, 1200px">
+          <img src="/assets/img/hero-1200.webp" width="1200" height="480" alt="Полированная поверхность светлого оникса крупным планом" fetchpriority="high" decoding="async">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- НАПРАВЛЕНИЯ -->
+  <section class="section dirs" id="directions" aria-labelledby="dirs-title">
+    <div class="container">
+      <div class="sec-head">
+        <h2 class="h2" id="dirs-title" data-reveal>Направления<br>работы</h2>
+        <p class="note" data-reveal>огромная коллекция природного камня со всего мира</p>
+      </div>
+      <ul class="dirs__list">
+        <li class="dir" data-reveal>
+          <picture class="dir__img" style="--w:236">
+            <source type="image/avif" srcset="/assets/img/dir-marble-142.avif 142w, /assets/img/dir-marble-472.avif 472w" sizes="(max-width: 767px) 60vw, 236px">
+            <source type="image/webp" srcset="/assets/img/dir-marble-142.webp 142w, /assets/img/dir-marble-472.webp 472w" sizes="(max-width: 767px) 60vw, 236px">
+            <img src="/assets/img/dir-marble-472.webp" width="472" height="391" alt="Образец белого мрамора" loading="lazy" decoding="async">
+          </picture>
+          <div class="dir__body">
+            <h3 class="dir__name">Мрамор</h3>
+            <p class="dir__text">прочный и одновременно лёгкий в обработке материал, подходящий даже для создания утончённых скульптур. Древнегреческий Парфенон был практически полностью построен из мрамора. Является одним из популярнейших отделочных материалов в дизайне и архитектуре</p>
+          </div>
+        </li>
+        <li class="dir" data-reveal>
+          <picture class="dir__img" style="--w:241">
+            <source type="image/avif" srcset="/assets/img/dir-granite-145.avif 145w, /assets/img/dir-granite-482.avif 482w" sizes="(max-width: 767px) 60vw, 241px">
+            <source type="image/webp" srcset="/assets/img/dir-granite-145.webp 145w, /assets/img/dir-granite-482.webp 482w" sizes="(max-width: 767px) 60vw, 241px">
+            <img src="/assets/img/dir-granite-482.webp" width="482" height="468" alt="Образец серого гранита" loading="lazy" decoding="async">
+          </picture>
+          <div class="dir__body">
+            <h3 class="dir__name">Гранит</h3>
+            <p class="dir__text">крупнозернистый камень с размером зёрен вплоть до 1&nbsp;см, что намного больше, чем у&nbsp;того же мрамора. Эта порода является основным компонентом земной континентальной коры, многие горы состоят из этого камня. Например, альпийский Монблан&nbsp;— один из известнейших гранитных пиков</p>
+          </div>
+        </li>
+        <li class="dir" data-reveal>
+          <picture class="dir__img" style="--w:247">
+            <source type="image/avif" srcset="/assets/img/dir-onyx-148.avif 148w, /assets/img/dir-onyx-493.avif 493w" sizes="(max-width: 767px) 60vw, 247px">
+            <source type="image/webp" srcset="/assets/img/dir-onyx-148.webp 148w, /assets/img/dir-onyx-493.webp 493w" sizes="(max-width: 767px) 60vw, 247px">
+            <img src="/assets/img/dir-onyx-493.webp" width="493" height="408" alt="Образец медового оникса" loading="lazy" decoding="async">
+          </picture>
+          <div class="dir__body">
+            <h3 class="dir__name">Оникс</h3>
+            <p class="dir__text">популярный поделочный камень, представляющий непрозрачную или полупрозрачную породу со слоистой структурой. Для отделки помещений и&nbsp;создания декоративных изделий используется мраморный оникс&nbsp;— это сравнительно недорогой и&nbsp;в&nbsp;то же время эффектный материал</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- УСЛУГИ -->
+  <section class="section services" id="services" aria-labelledby="services-title">
+    <div class="container">
+      <h2 class="h2" id="services-title" data-reveal>Услуги</h2>
+    </div>
+    <div class="services__scroller" data-drag-scroll tabindex="-1">
+      <ul class="services__track">
+        <li class="svc">
+          <a class="svc__link" href="#contacts" data-service="Лестницы" style="--w:369;--ar:368.86/337.83">
+            <svg class="svc__shape" viewBox="0 0 368.86 337.83" preserveAspectRatio="none" aria-hidden="true"><path d="M 360 157.83 C 327 248.33 279.41 337.83 180 337.83 C 80.59 337.83 0 257.24 0 157.83 C 0 58.42 55 47.83 194 8.83 C 333 -30.17 393 67.33 360 157.83 Z"/></svg>
+            <span class="svc__label">Лестницы</span>
+          </a>
+        </li>
+        <li class="svc svc--photo">
+          <a class="svc__link" href="#contacts" data-service="Столешницы" style="--w:380;--ar:379.5/371.13">
+            <picture class="svc__photo">
+              <source type="image/avif" srcset="/assets/img/svc-countertops-228.avif 228w, /assets/img/svc-countertops-759.avif 759w" sizes="(max-width: 767px) 174px, 380px">
+              <source type="image/webp" srcset="/assets/img/svc-countertops-228.webp 228w, /assets/img/svc-countertops-759.webp 759w" sizes="(max-width: 767px) 174px, 380px">
+              <img src="/assets/img/svc-countertops-759.webp" width="759" height="743" alt="" loading="lazy" decoding="async" draggable="false">
+            </picture>
+            <span class="svc__label">Столешницы</span>
+          </a>
+        </li>
+        <li class="svc">
+          <a class="svc__link" href="#contacts" data-service="Подоконники" style="--w:360;--ar:360/363.5">
+            <svg class="svc__shape" viewBox="0 0 360 363.5" preserveAspectRatio="none" aria-hidden="true"><path d="M 360 183.5 C 360 282.91 279.41 363.5 180 363.5 C 80.59 363.5 0 282.91 0 183.5 C 0 84.09 3.09 0 102.5 0 C 201.91 0 360 84.09 360 183.5 Z"/></svg>
+            <span class="svc__label">Подоконники</span>
+          </a>
+        </li>
+        <li class="svc">
+          <a class="svc__link" href="#contacts" data-service="Мраморные полы" style="--w:360;--ar:360/348.9">
+            <svg class="svc__shape" viewBox="0 0 360 348.9" preserveAspectRatio="none" aria-hidden="true"><path d="M 360 180 C 360 279.41 172.5 326 105.5 346 C 38.5 366 0 279.41 0 180 C 0 80.59 100.5 0 180 0 C 259.5 0 360 80.59 360 180 Z"/></svg>
+            <span class="svc__label">Мраморные полы</span>
+          </a>
+        </li>
+        <li class="svc">
+          <a class="svc__link" href="#contacts" data-service="Балясины" style="--w:359;--ar:358.89/352.34">
+            <svg class="svc__shape" viewBox="0 0 358.89 352.34" preserveAspectRatio="none" aria-hidden="true"><path d="M 358.89 172.34 C 358.89 271.75 229.39 352.34 178.89 352.34 C 128.39 352.34 58.39 309.84 12.39 146.34 C -33.61 -17.16 54.39 -18.16 178.89 21.84 C 303.39 61.84 358.89 72.93 358.89 172.34 Z"/></svg>
+            <span class="svc__label">Балясины</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ПРЕИМУЩЕСТВА -->
+  <section class="section adv" aria-labelledby="adv-title">
+    <div class="container">
+      <h2 class="h2" id="adv-title" data-reveal>Преимущества</h2>
+      <div class="adv__grid">
+        <div class="adv__col adv__col--left">
+          <figure class="adv__item" data-reveal style="margin:0">
+            <picture class="adv__img" style="--w:374">
+              <source type="image/avif" srcset="/assets/img/adv-onyx-224.avif 224w, /assets/img/adv-onyx-747.avif 747w" sizes="(max-width: 767px) 46vw, 374px">
+              <source type="image/webp" srcset="/assets/img/adv-onyx-224.webp 224w, /assets/img/adv-onyx-747.webp 747w" sizes="(max-width: 767px) 46vw, 374px">
+              <img src="/assets/img/adv-onyx-747.webp" width="747" height="502" alt="" loading="lazy" decoding="async">
+            </picture>
+            <figcaption class="adv__text">Камень высокого качества&nbsp;—<br>от природного до искусственного</figcaption>
+          </figure>
+          <figure class="adv__item" data-reveal style="margin:0">
+            <picture class="adv__img" style="--w:340">
+              <source type="image/avif" srcset="/assets/img/adv-granite-204.avif 204w, /assets/img/adv-granite-340.avif 340w" sizes="(max-width: 767px) 46vw, 340px">
+              <source type="image/webp" srcset="/assets/img/adv-granite-204.webp 204w, /assets/img/adv-granite-340.webp 340w" sizes="(max-width: 767px) 46vw, 340px">
+              <img src="/assets/img/adv-granite-340.webp" width="340" height="318" alt="" loading="lazy" decoding="async">
+            </picture>
+            <figcaption class="adv__text">Поставки из 43 стран</figcaption>
+          </figure>
+        </div>
+        <div class="adv__col adv__col--right">
+          <p class="note adv__note" data-reveal>прямые поставки из Испании, Турции, Италии, Индии и&nbsp;Бразилии</p>
+          <figure class="adv__item" data-reveal style="margin:0">
+            <picture class="adv__img" style="--w:350">
+              <source type="image/avif" srcset="/assets/img/adv-marble-210.avif 210w, /assets/img/adv-marble-699.avif 699w" sizes="(max-width: 767px) 46vw, 350px">
+              <source type="image/webp" srcset="/assets/img/adv-marble-210.webp 210w, /assets/img/adv-marble-699.webp 699w" sizes="(max-width: 767px) 46vw, 350px">
+              <img src="/assets/img/adv-marble-699.webp" width="699" height="595" alt="" loading="lazy" decoding="async">
+            </picture>
+            <figcaption class="adv__text">80+ видов камня</figcaption>
+          </figure>
+          <figure class="adv__item" data-reveal style="margin:0">
+            <picture class="adv__img" style="--w:385">
+              <source type="image/avif" srcset="/assets/img/adv-dark-231.avif 231w, /assets/img/adv-dark-577.avif 577w" sizes="(max-width: 767px) 46vw, 385px">
+              <source type="image/webp" srcset="/assets/img/adv-dark-231.webp 231w, /assets/img/adv-dark-577.webp 577w" sizes="(max-width: 767px) 46vw, 385px">
+              <img src="/assets/img/adv-dark-577.webp" width="577" height="491" alt="" loading="lazy" decoding="async">
+            </picture>
+            <figcaption class="adv__text">2 склада в России:<br>Москва и Грозный</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЭТАПЫ -->
+  <section class="section stages" id="stages" aria-labelledby="stages-title">
+    <div class="container">
+      <h2 class="h2" id="stages-title" data-reveal>Этапы работы</h2>
+      <ol class="stages__list">
+        <li class="stage" data-reveal><span>1</span><span>консультация</span></li>
+        <li class="stage" data-reveal><span>2</span><span>выезд мастера</span></li>
+        <li class="stage" data-reveal><span>3</span><span>установка</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ЗАЯВКА -->
+  <section class="section order" id="contacts" aria-labelledby="order-title">
+    <div class="container">
+      <h2 class="h2 order__title-m">Заказать услугу</h2>
+      <div class="order__panel">
+        <div class="order__info">
+          <h2 class="h2 order__title-d" id="order-title">Заказать услугу</h2>
+          <p class="note order__lead">бесплатная консультация</p>
+          <div class="contact">
+            <p class="contact__name">{{contactName}}</p>
+            <a class="contact__phone" href="tel:{{phoneHref}}">{{phoneDisplay}}</a>
+            <div class="contact__actions">
+              <a class="btn btn--wa" href="https://wa.me/{{waNumber}}" target="_blank" rel="noopener" data-goal="wa_direct">{{waIcon}}<span>WhatsApp</span></a>
+              <a class="btn btn--call" href="tel:{{phoneHref}}" data-goal="call">{{callIcon}}<span>Позвонить</span></a>
+            </div>
+          </div>
+        </div>
+        <form class="form" id="order-form" action="https://wa.me/{{waNumber}}" method="get" target="_blank" novalidate data-form data-wa="{{waNumber}}" data-contact="{{contactName}}" data-brand="{{brand}}">
+          <div class="form__field">
+            <label class="form__label" for="f-name">ваше имя</label>
+            <input class="form__input" id="f-name" type="text" placeholder="имя" autocomplete="name" required maxlength="80" aria-describedby="f-name-err">
+            <span class="form__error" id="f-name-err" aria-live="polite"></span>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="f-service">что вас интересует</label>
+            <select class="form__input form__select" id="f-service" required>
+              <option value="">выберите услугу</option>
+              <option>Лестницы</option>
+              <option>Столешницы</option>
+              <option>Подоконники</option>
+              <option>Мраморные полы</option>
+              <option>Балясины</option>
+              <option>Другое</option>
+            </select>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="f-text">сообщение</label>
+            <textarea class="form__input form__textarea" id="f-text" name="text" rows="3" maxlength="1000" placeholder="камень, размеры, город — что важно"></textarea>
+          </div>
+          <button class="form__submit" type="submit">{{waIcon}}<span>Отправить в WhatsApp</span></button>
+          <p class="form__hint">Откроется WhatsApp с готовым сообщением — останется нажать «Отправить».</p>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__row">
+      <a class="logo" href="/" aria-label="{{brand}} — на главную">{{logoSvg}}</a>
+      {{socials}}
+    </div>
+    <div class="footer__legal">
+      <span>© {{year}} {{brand}}</span>
+      <a href="tel:{{phoneHref}}">{{phoneDisplay}}</a>
+      <a href="/politika/">Политика обработки персональных данных</a>
+      {{instagramNote}}
+    </div>
+  </div>
+</footer>
+
+<!-- Быстрая связь на телефоне -->
+<div class="quickbar" aria-label="Быстрая связь">
+  <a class="quickbar__btn quickbar__btn--wa" href="https://wa.me/{{waNumber}}" target="_blank" rel="noopener" data-goal="wa_bar">{{waIcon}}<span>WhatsApp</span></a>
+  <a class="quickbar__btn quickbar__btn--call" href="tel:{{phoneHref}}" data-goal="call_bar">{{callIcon}}<span>Позвонить</span></a>
+</div>
+
+<div class="cookie" id="cookie" hidden>
+  <p>Мы используем cookies и Яндекс Метрику, чтобы понимать, как улучшить сайт. Подробнее — в&nbsp;<a href="/politika/">политике</a>.</p>
+  <div class="cookie__actions">
+    <button class="cookie__btn" type="button" data-cookie="1">Принять</button>
+    <button class="cookie__btn cookie__btn--ghost" type="button" data-cookie="0">Отклонить</button>
+  </div>
+</div>
+
+<script src="/assets/js/main.js?v={{version}}" defer></script>
+</body>
+</html>

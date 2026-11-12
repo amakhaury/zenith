@@ -1,0 +1,30 @@
+{
+  "_comment": "Все данные сайта в одном месте. Поменяйте и запустите: python3 tools/build.py",
+  "siteUrl": "https://amakhaury.github.io/zenith",
+  "brand": "ZENITH",
+  "contactName": "Майрбек",
+  "seoTitle": "Изделия из натурального камня на заказ — ZENITH | Москва и Грозный",
+  "seoDescription": "Изготовление и установка лестниц, столешниц, подоконников, полов и балясин из мрамора, гранита и оникса. Более 80 видов камня, склады в Москве и Грозном. Бесплатная консультация.",
+  "phoneDisplay": "+7 925 000-04-06",
+  "phoneHref": "+79250000406",
+  "whatsappNumber": "79250000406",
+  "email": "info@example.ru",
+  "socials": {
+    "whatsapp": "https://wa.me/79250000406",
+    "telegram": "",
+    "instagram": ""
+  },
+  "company": {
+    "name": "ИП Фамилия Имя Отчество",
+    "inn": "000000000000",
+    "ogrn": "000000000000000",
+    "address": "Россия, г. Москва, ул. Примерная, д. 1"
+  },
+  "cities": [
+    "Москва",
+    "Грозный"
+  ],
+  "metrikaId": "",
+  "yandexVerification": "",
+  "displayFont": "auto"
+}
